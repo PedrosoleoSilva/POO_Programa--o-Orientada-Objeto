@@ -21,7 +21,7 @@ public function getMarca(){
     return $this->marca;
 }
 public function setMarca($marca){
-    if($marca = $marca){
+    if(!empty($marca)){
         $this->marca = $marca;
     } else {
         echo"ERRADO!!!";
@@ -31,7 +31,7 @@ public function getModelo(){
     return $this->modelo;
 }
 public function setModelo($modelo){
-    if($modelo = $modelo){
+    if(!empty($modelo)){
         $this->modelo = $modelo;
     }else {
         echo"ERRADO!!!";
@@ -42,7 +42,7 @@ public function getAno(){
     return $this->ano;
 }
 public function setAno($ano){
-    if( $ano = $ano){
+    if(!empty( $ano)){
     $this->ano = abs($ano);
     }else {
         echo"ERRADO!!!";
@@ -52,7 +52,7 @@ public function getCor(){
     return $this->cor;
 }
 public function setCor($cor){
-    if($cor = $cor){
+    if(!empty($cor)){
     $this->cor = $cor;
     }else{
         echo"ERRADO!!!";
@@ -62,7 +62,7 @@ public function getPreco(){
     return $this->preco;
 }
 public function setPreco($preco){
-    if($preco = $preco){
+    if(!empty($preco)){
     $this->preco = abs($preco);
     }else {
         echo "ERRADO!!!";
